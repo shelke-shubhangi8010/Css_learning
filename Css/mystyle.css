@@ -3,3 +3,7 @@ h3{
     color: white;
     background-color: crimson;
 }
+h2{
+    font-size: 80px !important;
+    color:chartreuse !important;
+}
