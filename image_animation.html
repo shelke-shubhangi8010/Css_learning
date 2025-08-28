@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .swing{
+            animation:swing 1.5s ease-in-out infinite alternate;
+            transform-origin: top center;
+            position:relative ;
+            
+        }
+        .swing img{
+            width: 400px;
+            border:5px solid gray;
+            box-shadow: 2px 3px 10px black;
+        }
+        @keyframes swing{
+            0%{transform:rotate(7deg);}
+            100%{transform:rotate(-7deg);}
+        }
+    </style>
+</head>
+<body>
+    <div claass="swing">
+        <img src="images/pacifist-71445_640.jpg" alt="mahatma gandhi">
+
+    </div>
+</body>
+</html>
