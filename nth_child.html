@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            width: 200px;
+            padding: 10px;
+            list-style-type:none ;
+            font-weight: 200px;
+        }
+        li{
+            padding: 10px;
+            border: 2px solid red;
+            border-radius: 10px;
+            margin:10px;
+        }
+        li:nth-child(odd){
+            background-color: aqua;
+        }
+         li:nth-child(even){
+            background-color:blueviolet;
+            color: cornsilk;
+        }
+        li:first-child{
+            background-color:green;
+            color: cornsilk;
+        }
+    </style>
+</head>
+<body>
+    <!--ul>li*6{item $}-->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+    </ul>
+</body>
+</html>
