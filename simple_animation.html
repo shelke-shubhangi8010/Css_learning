@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .simple_animation{
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            position: relative;
+            animation: shubhangi;
+            -webkit-animation:shubhangi;
+            animation: shubhangi;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-delay: 10sec;
+        }
+        @keyframes shubhangi{
+            0%{background-color: blueviolet;left: 0px;top:0px;}
+            25%{background-color: blue;left: 300px;top:0px;}
+            50%{background-color:red;left: 300px;top:300px;}
+            75%{background-color:black;left: 0px;top:300px;}
+            100%{background-color: green;left: 0px;top:0px;}
+        
+
+        }
+    </style>
+</head>
+<body>
+    <div class="simple_animation"></div>
+</body>
+</html>

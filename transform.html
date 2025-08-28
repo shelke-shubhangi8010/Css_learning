@@ -1,35 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .container{
-            display:flex;
-            flex-wrap:wrap;
+                   .img-wrapper2{
+            width: 100px;
+            height: 50px;
+            border: 2px solid red;
+            position: relative;
+            overflow: hidden;
+        }
+        .inner-img{
+            width: 100px;
+            height: 50px;
+            transition: 3s;
+        }
+        .inner-img:hover{
+            transform:scale(1.5);
+        }
+
+
+
+
+
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             padding: 10px;
             gap: 30px;
         }
-        .box{
+
+        .box {
             background-color: aquamarine;
             border: 3px solid black;
             height: 200px;
             width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            transition: transform 5s ease;
 
+        }
+
+        .box1:hover {
+            transform: translate(125px, 125px);
+        }
+
+        .box2:hover {
+            transform: translateX(150px);
+        }
+
+        .box3:hover {
+            transform: translateY(150px);
+        }
+
+        .box4:hover {
+            transform: rotate(720deg);
+        }
+
+        .box5:hover {
+            transform: skewx(20deg);
+        }
+
+        .box6:hover {
+            transform: skewy(20deg);
+        }
+
+        .box7:hover {
+            transform: skew(20deg, 20deg);
+        }
+
+        .box8:hover {
+            transform: scale(1.2);
+        }
+                .box9:hover {
+            transform: scale(1.2) rotate(90deg) translate(100px);
+        }
+        .img-wrapper{
+            width: 100px;
+            height: 50px;
+            border: 2px solid red;
+            position: relative;
+            overflow: hidden;
+        }
+        .inner-img{
+            width: 100px;
+            height: 50px;
+            transition: 3s;
+        }
+        .inner-img:hover{
+            transform:scale(1.5);
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <div class="box box1"></div>
-        <div class="box box2"></div>
-        <div class="box box3"></div>
-        <div class="box box4"></div>
-        <div class="box box5"></div>
-        <div class="box box6"></div>
+        <div class="img-wrappe2">
+        <img src="images/desktop-3173176_1280.jpg" class="inner-img" alt="construction">
+
     </div>
-    
+
+    <div class="container">
+        <div class="box box1">Translate X & Y</div>
+        <div class="box box2">X</div>
+        <div class="box box3">Y</div>
+        <div class="box box4">Rotate</div>
+        <div class="box box5">SkewX</div>
+        <div class="box box6">SkewY</div>
+        <div class="box box7">Skew</div>
+        <div class="box box8">Scale</div>
+         <div class="box box9">Multiple</div>
+    </div>
+
+    <div class="img-wrapper">
+        <img src="images/guitar-1396785_640.jpg" class="inner-img" alt="construction">
+
+    </div>
+
 </body>
+
 </html>
